@@ -21,6 +21,15 @@ name = "cloudflare-docker-proxy"
 #   { pattern = "ghcr.libcuda.so", custom_domain = true },
 #   { pattern = "cloudsmith.libcuda.so", custom_domain = true },
 # ]
+routes = [
+  { pattern = "docker.wky-devops.top", custom_domain = true },
+  { pattern = "quay.wky-devops.top", custom_domain = true },
+  { pattern = "gcr.wky-devops.top", custom_domain = true },
+  { pattern = "k8s-gcr.wky-devops.top", custom_domain = true },
+  { pattern = "k8s.wky-devops.top", custom_domain = true },
+  { pattern = "ghcr.wky-devops.top", custom_domain = true },
+  { pattern = "cloudsmith.wky-devops.top", custom_domain = true },
+]
 
 [env.production.vars]
 MODE = "production"
